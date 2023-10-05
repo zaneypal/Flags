@@ -1,0 +1,469 @@
+/* Fonts
+font-family: 'DM Sans', sans-serif;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Mochiy Pop P One', sans-serif;
+*/
+
+#header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#header-left-content {
+    flex: 1;
+    width: 900px;
+    height: 100px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#header-middle-content {
+    z-index: 5;
+    flex: 8;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+#header-right-content {
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+body {
+    font-family: 'DM Sans', 'Mochiy Pop P One', sans-serif;
+    background-color:#42c1fc;
+    color: #000000;
+    align-items: right;
+    transition: background-color 0.5s,
+                color 0.5s;
+}
+
+p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.flag-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 20px;
+}
+
+.flag {
+    display: inline-block;
+    border-radius: 8%;
+    overflow: hidden;
+    white-space: nowrap;
+    /*box-shadow: 3px 3px 4px 0.6px black;*/
+}
+
+.dark-mode {
+    background-color: #001447;
+    color: white;    
+    transition: background-color 0.5s,
+                color 0.5s;
+}
+
+.back-button {
+    font-family: 'DM Sans';
+    position: absolute;
+    top: 20px;
+    left: -120px;
+    font-size: 48px;
+    transform: scale(0.7, 1);
+    width: 100px;
+    border: none;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.dark-mode-button,
+.dark-mode .dark-mode-button {
+    width: 75px;
+    height: 75px;
+    font-size: 48px;
+    color: rgb(255, 255, 253);
+    border-radius: 60%;
+    border: none;
+    transition: text-shadow 0.5s,
+                background-color 0.5s;
+}
+
+.dark-mode-button {
+    background-color: #42c1fc;
+}
+    
+.dark-mode-button span {
+    display: inline-block;
+    transform: rotate(30deg);
+    transition: text-shadow 0.5s;
+}
+
+.dark-mode .dark-mode-button {
+    /*background-color: #020008;*/
+    background-color: #001447;
+}
+
+.dark-mode-button:hover .dark-mode-button + span,
+.dark-mode .dark-mode-button:hover .dark-mode-button + span {
+    cursor: default;
+}
+
+.dark-mode .dark-mode-button span {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff1b7, 0 0 30px #c0f9fc, 0 0 25px #fffff9;
+    background-image: white;
+}
+
+.dark-mode .dark-mode-button:hover span {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff1b7, 0 0 30px #fff9aa, 0 0 25px #ffef09;
+    transition: text-shadow 0.2s;
+}
+
+.thailand-content,
+.japan-content,
+.germany-content,
+.sweden-content,
+.france-content,
+.denmark-content,
+.korea-content,
+.usa-content,
+.china-content,
+.vietnam-content,
+.romania-content,
+.russia-content,
+.italy-content,
+.greece-content,
+.poland-content,
+.india-content,
+.uk-content,
+.taiwan-content,
+.indonesia-content {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.thailand-content:hover p,
+.japan-content:hover p,
+.germany-content:hover p,
+.sweden-content:hover p,
+.france-content:hover p,
+.denmark-content:hover p,
+.korea-content:hover p,
+.usa-content:hover p,
+.china-content:hover p,
+.vietnam-content:hover p,
+.romania-content:hover p,
+.russia-content:hover p,
+.italy-content:hover p,
+.greece-content:hover p,
+.poland-content:hover p,
+.india-content:hover p,
+.uk-content:hover p,
+.taiwan-content:hover p,
+.indonesia-content:hover p {
+    color: rgb(32, 32, 32);
+    transition: color 0.2s,
+                text-shadow 0.2s;
+}
+
+.denmark-content:hover p,
+.thailand-content:hover p,
+.korea-content:hover p,
+.italy-content:hover p {
+    text-shadow: 1px 1px 5px #ff5d70, 3px 1px 6px #ff546e, 0 1px 15px #ffa7dd, 0 -1px 15px #ffa0a0;
+}
+
+.poland-content:hover p,
+.germany-content:hover p,
+.russia-content:hover p,
+.india-content:hover p {
+    text-shadow: 1px 1px 5px #ff5500, 3px 1px 6px #ffd38c, 0 1px 10px #ff6e34, 0 -1px 12px #ff8d60;
+}
+
+.china-content:hover p,
+.taiwan-content:hover p,
+.vietnam-content:hover p {
+    text-shadow: 1px 1px 5px #ffe30d, 3px 1px 6px #ff9616, 0 1px 15px #e6a500, 0 -1px 15px #e3b21d;
+}
+
+
+.greece-content:hover p,
+.uk-content:hover p,
+.indonesia-content:hover p,
+.japan-content:hover p {
+    text-shadow: 1px 1px 5px #67ffab, 3px 1px 6px #01ff62, 0 1px 15px #2c975f, 0 -1px 15px #409079;
+}
+
+.romania-content:hover p,
+.sweden-content:hover p,
+.france-content:hover p,
+.usa-content:hover p {
+    text-shadow: 1px 1px 5px #ff9eed, 3px 1px 6px #ff64cb, 0 1px 11px #ff67bd, 0 -1px 12px #ff6666;
+}
+
+.dark-mode .thailand-content:hover p,
+.dark-mode .japan-content:hover p,
+.dark-mode .germany-content:hover p,
+.dark-mode .sweden-content:hover p,
+.dark-mode .france-content:hover p,
+.dark-mode .denmark-content:hover p,
+.dark-mode .korea-content:hover p,
+.dark-mode .usa-content:hover p,
+.dark-mode .china-content:hover p,
+.dark-mode .vietnam-content:hover p,
+.dark-mode .romania-content:hover p,
+.dark-mode .russia-content:hover p,
+.dark-mode .italy-content:hover p,
+.dark-mode .greece-content:hover p,
+.dark-mode .poland-content:hover p,
+.dark-mode .india-content:hover p,
+.dark-mode .uk-content:hover p,
+.dark-mode .indonesia-content:hover p,
+.dark-mode .taiwan-content:hover p {
+    color: rgb(233, 245, 255);
+    text-shadow: 0 0 10px #fff, 0 0 20px #75baff, 0 0 30px #89efff, 0 0 25px #09efff;
+    transition: color 0.15s,
+    text-shadow 0.15s;
+}
+
+@media (min-width: 2000px) {
+    .flag-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1999px) {
+    .flag-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .flag {
+        transform: scale(0.5, 0.5);
+    }
+    #header-middle-content {
+        margin-bottom: 2px;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1400px) {
+    .flag-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1099px) {
+    .flag-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 899px) {
+    .flag-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@keyframes zoomIn {
+    0% {transform: scale(0, 0)};   
+    5% {transform: scale(0.05, 0.05)}; 
+    10% {transform: scale(0.1, 0.1)};   
+    15% {transform: scale(0.15, 0.15)};    
+    20% {transform: scale(0.2, 0.2)};  
+    25% {transform: scale(0.25, 0.25)};    
+    30% {transform: scale(0.3, 0.3)};  
+    35% {transform: scale(0.35, 0.35)};    
+    40% {transform: scale(0.4, 0.4)};   
+    45% {transform: scale(0.45, 0.45)};    
+    50% {transform: scale(0.5, 0.5)};   
+    55% {transform: scale(0.55, 0.55)};        
+    60% {transform: scale(0.6, 0.6)};   
+    65% {transform: scale(0.65, 0.65)};        
+    70% {transform: scale(0.7, 0.7)};   
+    75% {transform: scale(0.75, 0.75)};        
+    80% {transform: scale(0.8, 0.8)};   
+    85% {transform: scale(0.85, 0.85)};        
+    90% {transform: scale(0.9, 0.9)};   
+    95% {transform: scale(0.95, 0.95)};        
+    100% {transform: scale(1, 1)};        
+}
+
+@keyframes shake {
+    0% {transform: rotate(-2deg);}
+    10% {transform: rotate(-4deg);}
+    20% {transform: rotate(-7deg);}
+    30% {transform: rotate(-4deg);}
+    40% {transform: rotate(-2deg);}
+    50% {transform: rotate(2deg);}
+    60% {transform: rotate(4deg);}
+    70% {transform: rotate(7deg);}
+    80% {transform: rotate(4deg);}
+    90% {transform: rotate(2deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(150px, 0);
+    }
+}
+
+#header-left-content:hover .back-button {
+    animation: slideInFromLeft 0.2s;
+    animation-fill-mode: both;
+}
+
+/* Zoom In Animation v1 */
+/*
+.usa-content, .japan-content, .korea-content, .thailand-content {
+    animation: zoomIn 0.5s;
+}
+
+.germany-content, .sweden-content, .france-content, .denmark-content {
+    animation: zoomIn 0.9s;
+}
+
+.china-content, .vietnam-content, .romania-content, .russia-content {
+    animation: zoomIn 1.3s;
+}
+
+.italy-content, .greece-content, .india-content, .uk-content {
+    animation: zoomIn 1.7s;
+}
+*/
+
+/* Zoom In Animation v2 */
+.usa-content,
+.japan-content,
+.korea-content,
+.thailand-content,
+.germany-content,
+.sweden-content,
+.france-content,
+.denmark-content,
+.china-content,
+.vietnam-content,
+.romania-content,
+.russia-content,
+.italy-content,
+.greece-content,
+.poland-content,
+.india-content,
+.uk-content,
+.indonesia-content,
+.taiwan-content {
+    animation: zoomIn 1s;
+}
+
+/*.usa-content {
+    animation: zoomIn 1s;
+}
+
+.japan-content, .germany-content {
+    animation: zoomIn 1.1s;
+}
+
+.korea-content, .sweden-content, .china-content {
+    animation: zoomIn 1.4s;
+}
+
+.thailand-content, .france-content, .vietnam-content, .italy-content {
+    animation: zoomIn 1.7s;
+}
+
+.denmark-content, .romania-content, .greece-content {
+    animation: zoomIn 2s;
+}
+
+.russia-content, .india-content {
+    animation: zoomIn 2.3s;
+}
+
+.uk-content, .taiwan-content {
+    animation: zoomIn 2.6s;
+} */
+
+/* Zoom In Animation v3 */
+/*
+.usa-content {
+    animation: zoomIn 0.4s;
+}
+.japan-content {
+    animation: zoomIn 0.5s;
+}
+.korea-content {
+    animation: zoomIn 0.6s;
+}
+.thailand-content {
+    animation: zoomIn 0.7s;
+}
+.germany-content {
+    animation: zoomIn 0.8s;
+}
+.sweden-content {
+    animation: zoomIn 0.9s;
+}
+.france-content {
+    animation: zoomIn 1s;
+}
+.denmark-content {
+    animation: zoomIn 1.1s;
+}
+.china-content {
+    animation: zoomIn 1.2s;
+}
+.vietnam-content {
+    animation: zoomIn 1.3s;
+}
+.romania-content {
+    animation: zoomIn 1.4s;
+}
+.russia-content {
+    animation: zoomIn 1.5s;
+}
+.italy-content {
+    animation: zoomIn 1.6s;
+}
+.greece-content {
+    animation: zoomIn 1.7s;
+}
+.india-content {
+    animation: zoomIn 1.8s;
+}
+*/
+
+
+
+/* Shake Animation */
+
+.thailand-content:hover .flag,
+.japan-content:hover .flag,
+.germany-content:hover .flag,
+.sweden-content:hover .flag,
+.france-content:hover .flag,
+.denmark-content:hover .flag,
+.korea-content:hover .flag,
+.usa-content:hover .flag,
+.china-content:hover .flag,
+.vietnam-content:hover .flag,
+.romania-content:hover .flag,
+.russia-content:hover .flag,
+.italy-content:hover .flag,
+.greece-content:hover .flag,
+.poland-content:hover .flag,
+.india-content:hover .flag,
+.indonesia-content:hover .flag,
+.uk-content:hover .flag,
+.taiwan-content:hover .flag {
+    animation: shake 0.2s;
+    animation-iteration-count: 3;  
+}

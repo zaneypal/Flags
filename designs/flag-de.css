@@ -1,0 +1,17 @@
+.germany-black {
+    width: 220px;
+    height: 43px;
+    background-color: rgb(23, 23, 23);
+}
+
+.germany-red {
+    width: 220px;
+    height: 43px;
+    background-color: rgb(226, 74, 74);
+}
+
+.germany-yellow {
+    width: 220px;
+    height: 43px;
+    background-color: rgb(243, 211, 30);
+}

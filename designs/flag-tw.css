@@ -1,0 +1,95 @@
+.taiwan-base {
+    width: 220px;
+    height: 130px;
+    background-color: #f12323;
+    align-items: left;
+    z-index: 0;
+}
+
+.taiwan-sun-base1, .taiwan-sun-base2 {
+    position: relative;
+    height: 36px;
+    display: block;
+    background-color: #2020c6;
+    display: flex;
+    justify-content: center;
+}
+
+.taiwan-sun-base1 {
+    width: 99px;
+}
+
+.taiwan-sun-base2 {
+    top: -5px;
+    width: 100px;
+    left: -1px;
+    transform: scaleY(-1);
+    z-index: 0;
+}
+
+.taiwan-sun {
+    font-size: 45px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: solid 3px #2020c6;
+    background-color: whitesmoke;
+    margin-top: 16px;
+    z-index: 4;
+}
+
+.taiwan-sunray1,
+.taiwan-sunray2,
+.taiwan-sunray3,
+.taiwan-sunray4,
+.taiwan-sunray5,
+.taiwan-sunray6,
+.taiwan-sunray7 {
+    border-bottom: solid 15px whitesmoke;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.taiwan-sunray1 {
+    top: 6px;
+}
+
+.taiwan-sunray2 {
+    top: 9px;
+    right: 36px;
+    transform: rotate(30deg);
+}
+
+.taiwan-sunray3 {
+    top: 15px;
+    right: 28px;
+    transform: rotate(50deg);
+}
+
+.taiwan-sunray4 {
+    top: 28px;
+    right: 23px;
+    transform: rotate(92deg);
+}
+
+.taiwan-sunray5 {
+    top: 9px;
+    left: 36px;
+    transform: rotate(-30deg);
+}
+
+.taiwan-sunray6 {
+    top: 15px;
+    left: 28px;
+    transform: rotate(-50deg);
+}
+
+
+.taiwan-sunray7 {
+    top: 28px;
+    left: 24px;
+    transform: rotate(-92deg);
+}

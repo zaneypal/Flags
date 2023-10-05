@@ -1,0 +1,23 @@
+.vietnam-content p {
+    font-family: 'Source Sans 3';
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 19px;
+}
+
+.vietnam-base {
+    width: 220px;
+    height: 130px;
+    background-color: #ff2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.vietnam-star {
+    font-size: 84px;
+    color: yellow;
+    position: absolute;
+    bottom: 2px;
+}

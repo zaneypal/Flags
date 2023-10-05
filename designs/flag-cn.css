@@ -1,0 +1,72 @@
+.china-base {
+    width: 220px;
+    height: 130px;
+    background-color: #ff2f2f;
+    display: flex;
+    align-items: left;
+}
+
+.china-big-star {
+    width: 60px;
+    height: 70px;
+    background-color: #ff2f2f;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+.china-stars {
+    width: 40px;
+    height: 70px;
+    background-color: #ff2f2f;
+    padding-top: 6px;
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+}
+
+.china-star1,
+.china-star2,
+.china-star3,
+.china-star4,
+.china-star5 {
+    color: yellow;
+    position: absolute;
+}
+
+.china-star1 {
+    font-size: 45px;
+    left: 12px;
+    top: 2px;
+    transform: scale(1.1, 1.1);
+}
+
+.china-star2,
+.china-star3,
+.china-star4,
+.china-star5 {
+    font-size: 14px;
+}
+
+.china-star2 {
+    left: 0px;
+    top: 2px;
+    transform: rotate(-50deg);
+}
+
+.china-star3 {
+    right: 10px;
+    top: 16px;
+    transform: rotate(-102deg);
+}
+
+.china-star4 {
+    right: 10px;
+    bottom: 19px;
+}
+
+.china-star5 {
+    left: 0px;
+    bottom: 4px;
+    transform: rotate(-50deg)
+}

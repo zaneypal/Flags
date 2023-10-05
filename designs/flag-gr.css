@@ -1,0 +1,77 @@
+.greece-base {
+    width: 220px;
+    height: 130px;
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    align-items: left;
+    position: relative;
+}
+
+.greece-square {
+    width: 70px;
+    height: 70px;
+    background-color: #256ebc;
+    position: relative;
+}
+
+.greece-white-horizontal,
+.greece-white-vertical {
+    position: absolute;
+    background-color: white;
+}
+
+.greece-white-horizontal {
+    left: 0;
+    right: 0;
+    top: 27px;
+    height: 15px;
+}
+
+.greece-white-vertical {
+    top: 0;
+    bottom: -0.5px;
+    left: 27px;
+    width: 15px;
+}
+
+.greece-blue1 {
+    height: 15px;
+    background-color: #256ebc;
+    position: absolute;
+    left: 69px;
+    right: 0;
+}
+
+.greece-blue2 {
+    height: 15px;
+    background-color: #256ebc;
+    position: absolute;
+    left: 70px;
+    right: 0;
+    top: 27px;
+}
+
+.greece-blue3 {
+    height: 15px;
+    background-color: #256ebc;
+    position: absolute;
+    left: 69px;
+    right: 0;
+    top: 55px;
+}
+
+.greece-blue4 {
+    width: 220px;
+    height: 15px;
+    background-color: #256ebc;
+    position: absolute;
+    bottom: 30px;
+}
+
+.greece-blue5 {
+    width: 220px;
+    height: 15px;
+    background-color: #256ebc;
+    position: absolute;
+    bottom: 0;
+}

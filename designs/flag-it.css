@@ -1,0 +1,25 @@
+.italy-border {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.italy-green {
+    width: 71px;
+    height: 130px;
+    background-color: #409d42;
+    display: inline;
+}
+
+.italy-white {
+    width: 71px;
+    height: 130px;
+    background-color: rgb(238, 238, 238);
+    display: inline;
+}
+
+.italy-red {
+    width: 71px;
+    height: 130px;
+    background-color: rgb(215, 57, 57);
+    display: inline;
+}

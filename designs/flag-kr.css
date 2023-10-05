@@ -1,0 +1,98 @@
+.korea-base {
+    width: 220px;
+    height: 130px;
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.yin-yang {
+    background: #fff;
+	width: 75px;
+	height: 0px;
+	border-top: solid 38px rgb(189, 55, 55);
+	border-bottom: solid 38px rgb(55, 82, 189);	
+	border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.korea-yin {
+	position: absolute;
+    background-color: rgb(189, 55, 55);
+	width: 37px;
+	height: 36px;
+	border-radius: 40px;
+    bottom: -20px;
+    right: 37.5px;
+}
+
+.korea-yang {
+    position: absolute;
+    background-color: rgb(55, 82, 189);
+    width: 36px;
+	height: 36px;
+	position: absolute;
+	border-radius: 40px;
+    top: -18px;
+    left: 38px;
+}
+
+.stripe1 {
+    background: #000;
+	width: 30px;
+	height: 7.5px;
+	margin-bottom: 5px;
+}
+
+.stripe2 {
+    background: #fff;
+	width: 4px;
+	border-left: solid 13px #000;
+	border-right: solid 13px #000;
+	height: 7.5px;
+	margin-bottom: 5px;
+}
+
+.korea-quadrant1 {
+    position: absolute;
+    right: 25px;
+    top: 13px;
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    transform: rotate(50deg);	
+}
+
+.korea-quadrant2 {
+    position: absolute;
+    left: 25px;
+    top: 13px;
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg);	
+}
+
+.korea-quadrant3 {
+    position: absolute;
+    left: 25px;
+    bottom: 13px;
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.korea-quadrant4 {
+    position: absolute;
+    right: 25px;
+    bottom: 13px;
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+}

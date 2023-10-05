@@ -1,0 +1,22 @@
+.sweden-blue {
+    width: 220px;
+    height: 130px;
+    background-color: rgb(44, 96, 209);
+    position: relative;
+}
+
+.sweden-yellow-vertical {
+    width: 20px;
+    height: 130px;
+    background-color: rgb(245, 223, 83);
+    position: absolute;
+    left: 45px;
+}
+
+.sweden-yellow-horizontal {
+    width: 220px;
+    height: 20px;
+    background-color: rgb(245, 223, 83);
+    position: absolute;
+    top: 55px;
+}

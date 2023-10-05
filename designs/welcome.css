@@ -1,0 +1,161 @@
+* {
+    font-family: 'Archivo Black', 'Mochiy Pop P One', sans-serif;
+}
+
+header {
+    height: 100px;
+    position: relative;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, #be3bff, #1893ff);
+}
+
+a {
+    text-decoration: none;
+    color: #bfdaff;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #d0e3ff;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 20px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+#welcome-message {
+    text-align: center;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.buttons-section {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 70px 60px;
+}
+
+/*
+    animation: fadeIn 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    */
+    
+.login-bar {
+    color: rgb(249, 249, 249);
+    font-weight: bold;
+    background-color: #e7e7e738;
+    border: solid 3px #d0e4ff66;
+    padding-left: 25px;
+    text-align: left;
+    font-size: 24px;
+    width: 500px;
+    height: 50px;
+    border-radius: 100px;
+    outline: none;
+}
+
+::placeholder {
+    color: #7db3ff;
+    opacity: 0.3;
+}
+
+.login-bar:target {
+    border: none;
+}
+
+#login-button,
+#create-account-button {
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+#login-button {
+    background: linear-gradient(#9d58ff, #6939ad);
+    color: #f8f8f8; 
+    box-shadow: 0 3px 0 0.2px #4b2d74;
+    font-size: 18px;
+}
+
+#login-button:hover {
+    background: linear-gradient(#a463ff, #7b44c9);
+    box-shadow: 0 3px 0 0.2px #6c41a9;
+    color: white; 
+}
+
+#login-button:active {
+    box-shadow: none;
+    background: linear-gradient(#a463ff, #7b44c9);
+    transform: translateY(3.5px);
+    color: white; 
+}
+
+#create-account-button {
+    background-color: #0dbfff;
+    color: #f8f8f8; 
+    box-shadow: 0 3px 0 0.1px #31b2e1;
+    font-size: 14px;
+}
+
+#create-account-button:hover {
+    background-color: #45cdff;
+    box-shadow: 0 3px 0 0.1px #35c0f3;
+    color: white; 
+}
+
+#create-account-button:active {
+    transform: translateY(3px);
+    background-color: #45cdff;
+    box-shadow: none;
+    color: white; 
+}
+
+#welcome-message,
+.login-bar,
+#login-button,
+#create-account-button {
+    opacity: 0;
+    animation: fadeIn 1.6s;
+    animation-fill-mode: forwards;
+}
+
+.login-bar {
+    animation-delay: 0.5s;
+}
+
+#login-button {
+    animation-delay: 1.2s;
+}
+
+#create-account-button {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

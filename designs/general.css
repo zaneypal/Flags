@@ -1,0 +1,59 @@
+.close-button {
+    position: absolute;
+    left: 45px;
+    top: 30px;
+    font-size: 48px;
+    color: #d0e4ff66;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.1s ease;
+}
+
+.close-button:hover {
+    color:#d0e4ff98;
+}
+
+.back-button {
+    font-family: 'DM Sans';
+    position: absolute;
+    top: 50px;
+    font-size: 48px;
+    font-weight: bold;
+    transform: scale(0.8, 1);
+    width: 150px;
+    border: none;
+    border-radius: 20%;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+#enter-button {
+    background-color: #0dbfff;
+    color: #f8f8f8; 
+    box-shadow: 0 3px 0 0.1px #31b2e1;
+    font-size: 14px;
+}
+
+#enter-button:hover {
+    background-color: #45cdff;
+    box-shadow: 0 3px 0 0.1px #35c0f3;
+    color: white; 
+}
+
+#enter-button:active {
+    transform: translateY(3px);
+    background-color: #45cdff;
+    box-shadow: none;
+    color: white; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
