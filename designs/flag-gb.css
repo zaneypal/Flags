@@ -45,18 +45,27 @@
     left: 0;
     top: 0;
     transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
 }
 
 .uk-quadrant3 {
     left: 0;
     bottom: 0;
     transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    -moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
 }
 
 .uk-quadrant4 {
     right: 0;
     bottom: 0;
     transform: scale(1, -1);
+    -webkit-transform: scale(1, -1);
+    -moz-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
 }
 
 .triangle1 {
@@ -74,15 +83,21 @@
     border-left: solid 24px transparent;
     border-right: solid 24px transparent;
     width: 120px;
-    transform: rotate(-215deg);
     margin-left: -58px;
     margin-top: 23px;
+    transform: rotate(-215deg);
+    -webkit-transform: rotate(-215deg);
+    -moz-transform: rotate(-215deg);
+    -o-transform: rotate(-215deg);
 }
 
 .uk-quadrant2 .red-line,
 .uk-quadrant4 .red-line {
-    transform: rotate(-208deg);
     margin-left: -50px;
+    transform: rotate(-208deg);
+    -webkit-transform: rotate(-208deg);
+    -moz-transform: rotate(-208deg);
+    -o-transform: rotate(-208deg);
 }
 
 .triangle2 {

@@ -74,6 +74,9 @@ p {
     left: -120px;
     font-size: 48px;
     transform: scale(0.7, 1);
+    -webkit-transform: scale(0.7, 1);
+    -moz-transform: scale(0.7, 1);
+    -o-transform: scale(0.7, 1);
     width: 100px;
     border: none;
     color: white;
@@ -93,9 +96,12 @@ p {
     border: none;
     display: inline-block;
     cursor: default;
-    transform: rotate(30deg);
     transition: text-shadow 0.3s;
     user-select: none;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
     transition: text-shadow 0.5s,
                 background-color 0.5s;
 }

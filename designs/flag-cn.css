@@ -39,6 +39,9 @@
     left: 12px;
     top: 2px;
     transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
 }
 
 .china-star2,
@@ -52,12 +55,18 @@
     left: 0px;
     top: 2px;
     transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
 }
 
 .china-star3 {
     right: 10px;
     top: 16px;
     transform: rotate(-102deg);
+    -webkit-transform: rotate(-102deg);
+    -moz-transform: rotate(-102deg);
+    -o-transform: rotate(-102deg);
 }
 
 .china-star4 {
@@ -68,5 +77,8 @@
 .china-star5 {
     left: 0px;
     bottom: 4px;
-    transform: rotate(-50deg)
+    transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg); 
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
 }
