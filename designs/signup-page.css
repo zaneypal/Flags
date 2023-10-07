@@ -1,0 +1,121 @@
+
+* {
+    font-family: 'Archivo Black', 'Mochiy Pop P One', sans-serif;
+}
+
+header {
+    height: 100px;
+    position: relative;
+}
+
+body {
+    font-family: 'DM Sans', 'Mochiy Pop P One', sans-serif;
+    background-color:#42c1fc;
+    color: #000000;
+    align-items: right;
+    transition: background-color 0.8s,
+                color 0.8s;
+}
+
+#welcome-message {
+    text-align: center;
+
+    color: #000000;
+    font-size: 60px;
+}
+
+.buttons-section {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 70px 60px;
+}
+
+/*
+    animation: fadeIn 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    */
+    
+.login-bar {
+    color: #f9f9f9;
+    font-weight: bold;
+    background-color: #ffffff38;
+    border: solid 3px #d0e4ff66;
+    padding-left: 25px;
+    text-align: left;
+    font-size: 24px;
+    width: 500px;
+    height: 50px;
+    border-radius: 100px;
+    outline: none;
+}
+
+::placeholder {
+    color: #ffffff;
+    opacity: 0.6;
+}
+
+.login-bar:target {
+    border: none;
+}
+
+#login-button,
+#create-account-button {
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+#create-account-button {
+    background-color: #0dbfff;
+    color: #f8f8f8; 
+    box-shadow: 0 3px 0 0.1px #31b2e1;
+    font-size: 14px;
+}
+
+#create-account-button:hover {
+    background-color: #45cdff;
+    box-shadow: 0 3px 0 0.1px #35c0f3;
+    color: white; 
+}
+
+#create-account-button:active {
+    transform: translateY(3px);
+    background-color: #45cdff;
+    box-shadow: none;
+    color: white; 
+}
+
+#welcome-message,
+.login-bar,
+#login-button,
+#create-account-button {
+    opacity: 0;
+    animation: fadeIn 1.6s;
+    animation-fill-mode: forwards;
+}
+
+.login-bar {
+    animation-delay: 0.5s;
+}
+
+#login-button {
+    animation-delay: 1.2s;
+}
+
+#create-account-button {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
