@@ -37,8 +37,8 @@ body {
     background-color:#42c1fc;
     color: #000000;
     align-items: right;
-    transition: background-color 0.5s,
-                color 0.5s;
+    transition: background-color 0.8s,
+                color 0.8s;
 }
 
 p {
@@ -64,8 +64,6 @@ p {
 .dark-mode {
     background-color: #00051f;
     color: white;    
-    transition: background-color 0.5s,
-                color 0.5s;
 }
 
 .back-button {
