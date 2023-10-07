@@ -1,0 +1,100 @@
+@keyframes zoomIn {
+    0% {transform: scale(0, 0)};   
+    5% {transform: scale(0.05, 0.05)}; 
+    10% {transform: scale(0.1, 0.1)};   
+    15% {transform: scale(0.15, 0.15)};    
+    20% {transform: scale(0.2, 0.2)};  
+    25% {transform: scale(0.25, 0.25)};    
+    30% {transform: scale(0.3, 0.3)};  
+    35% {transform: scale(0.35, 0.35)};    
+    40% {transform: scale(0.4, 0.4)};   
+    45% {transform: scale(0.45, 0.45)};    
+    50% {transform: scale(0.5, 0.5)};   
+    55% {transform: scale(0.55, 0.55)};        
+    60% {transform: scale(0.6, 0.6)};   
+    65% {transform: scale(0.65, 0.65)};        
+    70% {transform: scale(0.7, 0.7)};   
+    75% {transform: scale(0.75, 0.75)};        
+    80% {transform: scale(0.8, 0.8)};   
+    85% {transform: scale(0.85, 0.85)};        
+    90% {transform: scale(0.9, 0.9)};   
+    95% {transform: scale(0.95, 0.95)};        
+    100% {transform: scale(1, 1)};        
+}
+
+@keyframes shake {
+    0% {transform: rotate(-2deg);}
+    10% {transform: rotate(-4deg);}
+    20% {transform: rotate(-7deg);}
+    30% {transform: rotate(-4deg);}
+    40% {transform: rotate(-2deg);}
+    50% {transform: rotate(2deg);}
+    60% {transform: rotate(4deg);}
+    70% {transform: rotate(7deg);}
+    80% {transform: rotate(4deg);}
+    90% {transform: rotate(2deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(150px, 0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOut {
+    40% {
+        opacity: 1;
+    }
+    80%  {
+        opacity: 0;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(36deg);
+    }
+    20% {
+        transform: rotate(72deg);
+    }
+    30% {
+        transform: rotate(108deg);
+    }
+    40% {
+        transform: rotate(144deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    60% {
+        transform: rotate(216deg);
+    }
+    70% {
+        transform: rotate(252deg);
+    }
+    80% {
+        transform: rotate(288deg);
+    }
+    90% {
+        transform: rotate(324deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

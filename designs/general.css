@@ -48,12 +48,3 @@
     box-shadow: none;
     color: white; 
 }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
