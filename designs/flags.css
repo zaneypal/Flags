@@ -90,25 +90,21 @@ p {
     background-color: rgba(0,0,0,0);
     border-radius: 60%;
     border: none;
-    transition: text-shadow 0.5s,
-                background-color 0.5s;
-}
-    
-.dark-mode-button span {
     display: inline-block;
     cursor: default;
     transform: rotate(30deg);
     transition: text-shadow 0.3s;
     user-select: none;
+    transition: text-shadow 0.5s,
+                background-color 0.5s;
 }
 
-
-.dark-mode .dark-mode-button span {
+.dark-mode .dark-mode-button {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff1b7, 0 0 30px #c0f9fc, 0 0 25px #fffff9;
     background-image: white;
 }
 
-.dark-mode .dark-mode-button:hover span {
+.dark-mode .dark-mode-button:hover {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff1b7, 0 0 30px #fff9aa, 0 0 25px #ffef09;
     transition: text-shadow 0.3s;
 }
